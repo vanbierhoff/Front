@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styleLoad.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="section-form-loader" >
+        <form action="js/loaderJs.js" enctype="multipart/form-data" class="load-file-form">
+            <input type="file" id="inputfile"  name="inputfile" 
+            ref="inputFile"
+            v-on:input='waitLoad'> 
+          <label class="label-input" for="inputfile"><img src="img/task2-svg/upload.svg" alt=""> <p> <span class="label-input__line"> Загрузите скан страницы с фотографией</span> <br>
+            <span class="label-input-span-size">размер файла не более 5мб</span> </p> </label>
+      
+         <div class="form-loader-status">  
+          <div class="form-loader">
+             <div class="form-loader-txt">        
+             <ul class="form-loader__ul">
+                 <li v-show='checked' ><img class="form-li-img__bk" src="img/task2-svg/wait.svg" alt="waitImg"></li>
+                 <li v-show='good'><img class="form-li-img__bk" src="img/task2-svg/ok.svg" alt="goodImg"></li>
+                 <li v-show='wait' class="wait form-li__"><div class="div-1"></div>
+                <div class=div-2></div> 
+                <div class="div-3"></div></li>
+                </ul> 
+                <ul class="form-loader-file-block__ul">
+                     <li><p class="form-loader__p"  v-show='seen'>  Страница с пропиской <span class="status-load" v-bind:class="statusClass" > {{status}}</span></p></li>
+                        <ul>   
+                        <li> <p v-show='seen' class="form-loader-file-info" >{{fileName}} <span> ({{fileSize}} кб)  </span></p> </li>
+                    </ul>
+                    </li>
+                   
+                    
+                       
+                </ul>
+            </div>    
+        
+         
+          </div>
+        </form> 
+    
+    
+    </section>
+    
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="js/loaderJs.js"></script>
+</html>

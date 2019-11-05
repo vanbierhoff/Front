@@ -1,0 +1,280 @@
+body{
+
+    width: 100%;
+    font-family: arial;
+    font-size: 1.5em;
+    margin: 0 auto;
+}
+
+form img{
+    width: 2.8em;
+}
+
+#inputfile{
+    display: none;
+}
+
+.label-input{
+    display: flex;
+    align-items: center;
+}
+.label-input img{
+ background: #ffffff;
+ margin-right: 10%;
+}
+
+.section-form-loader{
+
+    max-width: 1092px;
+    width: 90vw;
+    display: flex;
+    background: #f5f2f2;
+    padding: 0 10%;
+    box-sizing: border-box;
+}
+
+form{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.form-loader-status{
+    width: 100%;
+}
+
+.form-li-img__bk{
+    background: #ffffff;
+}
+
+.form-loader-file-info{
+font-size: 0.7em;
+}
+
+
+.label-input{
+ 
+    width: 100%;
+}
+
+.label-input p {
+    text-align: center;
+}
+
+.label-input__line{
+    text-decoration: underline;
+}
+
+.label-input-span-size{
+    text-decoration: none;
+}
+
+.form-loader{
+   max-width:1092px ;
+}
+
+.form-loader-txt{
+    display: flex;
+    align-items: center;
+}
+
+.form-loader__p{
+    display: flex;
+
+}
+
+.form-loader-li__mr{
+    margin-bottom: 15%;
+}
+
+.status-load{
+    position: absolute;
+  
+    right: 10%;
+}
+
+.form-loader__ul{
+    list-style-type:none;
+    align-self: flex-start;
+    margin-right: 10%;
+    padding: 0;
+}
+
+.form-loader-file-block__ul{
+    list-style-type: none;
+    padding: 0;
+}
+.form-loader-file-block__ul ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.wait{
+    width: 2.8em;
+    background: #ffffff;
+}
+
+.wait > div{
+top: 48.4%;
+    display: block;
+    position: absolute;
+    border: 1px solid #000000;
+border-radius: 50%;
+background: #000000;
+
+}
+
+.wait > .div-1{
+width: 5px;
+left: 20%;
+height: 5px;
+transition-timing-function: cubic-bezier(.82,.22,.34,1.03) ;
+animation: wait 1.5s infinite;
+margin-right:10px ;
+}
+.wait > .div-2{
+    left: 48.4%;
+width: 2.5px;
+height: 2.5px;
+transition-timing-function: cubic-bezier(.98,.25,.72,.44) ;
+animation: waitTwo 2s infinite;
+margin-right:10px ;
+}
+
+
+.wait > .div-3{
+width: 1px;
+right: 0%;
+height: 1px;
+transition-timing-function: cubic-bezier(.3,1.43,.72,.44) ;
+animation: waitTrhee 2.5s infinite;
+margin-right:10px ;
+left: 80%;
+}
+.wait{
+    display: flex;
+    width: 2.8em;
+    height:2.8em;
+    position: relative;
+
+}
+
+.status-good{
+    color:green
+}
+.status-reject{
+    color:red;
+}
+.status-wait{
+    color:gray;
+}
+
+
+@keyframes wait{
+0%{
+    width: 5px;
+    height: 5px;
+}
+50%{
+    width: 2.5px;
+    height: 2.5px;
+}
+75%{
+    width: 1px;
+    height: 1px;
+}
+
+85%{
+    width: 2.5px;
+    height: 2.5px;
+}
+100%{
+    width: 5px;
+    height: 5px;
+}
+
+}
+
+@keyframes waitTwo{
+    0%{
+        width: 2.5px;
+        height: 2.5px;
+    }
+    50%{
+        width: 5px;
+        height: 5px;
+    }
+    75%{
+        width: 2.5px;
+        height: 2.5px;
+    }
+    
+    85%{
+        width: 1px;
+        height: 1px;
+    }
+    100%{
+        width: 2.5px;
+        height: 2.5px;
+    }
+    
+    }
+
+    @keyframes waitTrhee{
+        0%{
+            width: 1px;
+            height: 1px;
+        }
+        50%{
+           height: 2.5px;
+            width: 2.5px;
+        }
+        75%{
+           height:5px ;
+            width: 5px;
+        }
+        
+        85%{
+            height: 2.5px;
+            width: 2.5px;
+        }
+        100%{
+            width: 1px;
+            height: 1px;
+        }
+        
+        }
+
+        @media screen and (max-width:550px){
+            body{
+                font-size: 0.7em;
+            }
+            .section-form-loader {
+                padding: 0 3%;
+            }
+            .status-load {
+                right: 4%;
+            }
+
+            wait > .div-1{
+               
+                left: 15%;
+               
+                }
+                .wait > .div-2{
+                    left: 43.4%;
+             
+        
+                }
+                
+                
+                .wait > .div-3{
+                
+                left: 65%;
+                }
+          
+        }

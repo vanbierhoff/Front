@@ -1,0 +1,745 @@
+@font-face {
+  font-family: "PT Sans - Caption Bold";
+  src: url(assets/fonts/PTSansCaption-Bold.ttf);
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "PT Sans - Caption";
+  src: url(assets/fonts/PTSansCaption-Regular.ttf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: url(assets/fonts/PT_Sans/PTSans-Regular.ttf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'PT Sans';
+  src: url(assets/fonts/PT_Sans/PTSans-Bold.ttf);
+  font-style: normal;
+  font-weight: bold;
+}
+
+body {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  font-size: 12px;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+header {
+  background: url(assets/img/background/Saturation_1.png) 100% 100% no-repeat;
+  width: 100vw;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+
+main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+
+.img-logo {
+  height: 20px;
+  margin-right: 7px;
+}
+
+.header-wrapper {
+  max-width: 1092px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+}
+
+.header-logo__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-logo-top-position {
+  margin: 2% 0 0 0;
+}
+
+.header-logo-domens {
+  color: #ffffff;
+  font-family: "PT Sans";
+  font-size: 1.33em;
+  font-weight: 700;
+  line-height: 1;
+  margin-top: -0.2%;
+}
+
+.header-special-p {
+  font-family: "PT Sans";
+  font-size: 2em;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: absolute;
+  right: 40%;
+  color: #ffffff;
+}
+
+.header-account-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.account-wrapper-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 71%;
+  border-radius: 15px;
+  -webkit-box-shadow: inset 0px -30px 0px #333333;
+          box-shadow: inset 0px -30px 0px #333333;
+  opacity: 0.9;
+}
+
+.account-wrapper-input-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.account-input-search {
+  width: 100%;
+  font-family: "PT Sans";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 2em;
+  border-radius: 15px;
+  padding: 3.9% 0 3.9% 5%;
+  outline: 0 !important;
+  border: none;
+}
+
+.account-status__text {
+  font-family: "PT Sans";
+  font-size: 1.333em;
+  font-weight: 400;
+  background: #333333;
+  border-radius: 15px;
+  color: #ffffff;
+  line-height: 0;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.account-status__text > span {
+  color: #77b53c;
+  font-family: "PT Sans";
+  text-decoration: underline;
+}
+
+.account-price {
+  font-family: "PT Sans - Caption Bold";
+  font-size: 6.667em;
+  color: #ffffff;
+  width: 70%;
+  text-align: center;
+  margin-bottom: 5.5%;
+}
+
+.account-button-check {
+  border-radius: 15px;
+  background-color: #5f6062;
+  outline: 0 !important;
+  border: none;
+  font-family: "PT Sans";
+  font-size: 1.83em;
+  color: #ffffff;
+  padding: 2.1% 4.3% 2.3%;
+  position: absolute;
+  right: 2%;
+  top: 13%;
+  cursor: pointer;
+}
+
+.account-button-create {
+  border: none;
+  outline: 0 !important;
+  font-family: "PT Sans";
+  border-radius: 10px;
+  font-size: 2em;
+  padding: 1.3% 4.1%;
+  background-color: #77b53c;
+  color: #ffffff;
+}
+
+.h-create-bt-position {
+  margin: 7.4% 0 0 0;
+}
+
+.down-ancor {
+  border-radius: 27px;
+  border: 4px solid #ffffff;
+  padding: 0.5%;
+  margin-top: 11.5em;
+  margin-bottom: 5.08em;
+}
+
+.icon_clip1 {
+  -webkit-clip-path: polygon(0% 8%, 9.5% 8%, 11.5% 0%, 13.5% 8%, 100% 8%, 100% 100%, 0 100%, 0 8%);
+          clip-path: polygon(0% 8%, 9.5% 8%, 11.5% 0%, 13.5% 8%, 100% 8%, 100% 100%, 0 100%, 0 8%);
+}
+
+.icon-text_clip1 {
+  -webkit-clip-path: polygon(0% 10%, 9.5% 10%, 11.5% 2%, 13.5% 10%, 100% 10%, 100% 100%, 0 100%, 0 10%);
+          clip-path: polygon(0% 10%, 9.5% 10%, 11.5% 2%, 13.5% 10%, 100% 10%, 100% 100%, 0 100%, 0 10%);
+}
+
+.icon_clip2 {
+  -webkit-clip-path: polygon(0% 8%, 34.5% 8%, 36.5% 0%, 38.5% 8%, 100% 8%, 100% 100%, 0 100%, 0 8%);
+          clip-path: polygon(0% 8%, 34.5% 8%, 36.5% 0%, 38.5% 8%, 100% 8%, 100% 100%, 0 100%, 0 8%);
+}
+
+.icon-text_clip2 {
+  -webkit-clip-path: polygon(0% 10%, 34.5% 10%, 36.5% 2%, 38.5% 10%, 100% 10%, 100% 100%, 0 100%, 0 10%);
+          clip-path: polygon(0% 10%, 34.5% 10%, 36.5% 2%, 38.5% 10%, 100% 10%, 100% 100%, 0 100%, 0 10%);
+}
+
+.icon_clip3 {
+  -webkit-clip-path: polygon(0% 8%, 60.5% 8%, 62.5% 0%, 64.5% 8%, 100% 8%, 100% 100%, 0 100%, 0 8%);
+          clip-path: polygon(0% 8%, 60.5% 8%, 62.5% 0%, 64.5% 8%, 100% 8%, 100% 100%, 0 100%, 0 8%);
+}
+
+.icon-text_clip3 {
+  -webkit-clip-path: polygon(0% 10%, 60.5% 10%, 62.5% 2%, 64.5% 10%, 100% 10%, 100% 100%, 0 100%, 0 10%);
+          clip-path: polygon(0% 10%, 60.5% 10%, 62.5% 2%, 64.5% 10%, 100% 10%, 100% 100%, 0 100%, 0 10%);
+}
+
+.icon_clip4 {
+  -webkit-clip-path: polygon(0% 8%, 85.5% 8%, 87.5% 0%, 89.5% 8%, 100% 8%, 100% 100%, 0 100%, 0 8%);
+          clip-path: polygon(0% 8%, 85.5% 8%, 87.5% 0%, 89.5% 8%, 100% 8%, 100% 100%, 0 100%, 0 8%);
+}
+
+.icon-text_clip4 {
+  -webkit-clip-path: polygon(0% 10%, 85.5% 10%, 87.5% 2%, 89.5% 10%, 100% 10%, 100% 100%, 0 100%, 0 10%);
+          clip-path: polygon(0% 10%, 85.5% 10%, 87.5% 2%, 89.5% 10%, 100% 10%, 100% 100%, 0 100%, 0 10%);
+}
+
+.icon_mclip1 {
+  -webkit-clip-path: polygon(0% 8%, 19.5% 8%, 21.5% 0%, 23.5% 8%, 100% 8%, 100% 100%, 0 100%, 0 8%);
+          clip-path: polygon(0% 8%, 19.5% 8%, 21.5% 0%, 23.5% 8%, 100% 8%, 100% 100%, 0 100%, 0 8%);
+}
+
+.icon-text_mclip1 {
+  -webkit-clip-path: polygon(0% 10%, 19.5% 10%, 21.5% 2%, 23.5% 10%, 100% 10%, 100% 100%, 0 100%, 0 10%);
+          clip-path: polygon(0% 10%, 19.5% 10%, 21.5% 2%, 23.5% 10%, 100% 10%, 100% 100%, 0 100%, 0 10%);
+}
+
+.icon_mclip2 {
+  -webkit-clip-path: polygon(0% 8%, 75.5% 8%, 77.5% 0%, 79.5% 8%, 100% 8%, 100% 100%, 0 100%, 0 8%);
+          clip-path: polygon(0% 8%, 75.5% 8%, 77.5% 0%, 79.5% 8%, 100% 8%, 100% 100%, 0 100%, 0 8%);
+}
+
+.icon-text_mclip2 {
+  -webkit-clip-path: polygon(0% 10%, 75.5% 10%, 77.5% 2%, 79.5% 10%, 100% 10%, 100% 100%, 0 100%, 0 10%);
+          clip-path: polygon(0% 10%, 75.5% 10%, 77.5% 2%, 79.5% 10%, 100% 10%, 100% 100%, 0 100%, 0 10%);
+}
+
+main {
+  width: 90vw;
+  max-width: 1092px;
+  position: relative;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto auto auto auto;
+      grid-template-rows: auto auto auto auto;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+      grid-template-areas: "hlogo par par par" "Ic1 Ic2 Ic3 Ic4" "click click click click" "cl1 cl2 cl3 cl4" "click_two click_two click_two click_two" "bt bt bt bt";
+  padding: 2% 0 0 0;
+}
+
+.header-logo-top-position {
+  position: absolute;
+}
+
+.header-logo__grid {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: hlogo;
+}
+
+.logo-domens__color {
+  color: #000000;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.main-service-p {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-area: par;
+}
+
+.main-icon__click {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: click;
+}
+
+.Ic-1 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: Ic1;
+}
+
+.Ic-2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: Ic2;
+}
+
+.Ic-3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: Ic3;
+}
+
+.Ic-4 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 4;
+  grid-area: Ic4;
+}
+
+.wrapper-main-icon {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: click;
+}
+
+.wrapper-main-icon__two-line {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: click_two;
+}
+
+.main-button-create-acc {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: bt;
+}
+
+.button__green-hover:hover {
+  background: #058105;
+}
+
+.button-check__hover:hover {
+  background-color: #093ca0;
+}
+
+#grid div {
+  text-align: center;
+}
+
+.main-service-p {
+  color: #333333;
+  font-family: "PT Sans";
+  font-size: 2.91em;
+  font-weight: 700;
+}
+
+.main-icon-services {
+  cursor: pointer !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.main-icon-services:after {
+  display: none;
+  content: "";
+  height: 50px;
+}
+
+.main-services-click {
+  display: none;
+  width: 60vw;
+  background: grey;
+}
+
+.main-services-text {
+  font-family: "PT Sans";
+  font-size: 1.667em;
+  font-weight: 400;
+}
+
+.text__uppercase {
+  text-transform: uppercase;
+}
+
+.main-button-create-acc {
+  border: none;
+  outline: 0 !important;
+  font-family: "PT Sans";
+  border-radius: 10px;
+  font-size: 2em;
+  padding: 1.3% 4.1%;
+  background-color: #77b53c;
+  color: #ffffff;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.about_gino {
+  background: url(assets/img/background/background_two.png) 100% 100% no-repeat;
+  width: 100vw;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  grid-area: about;
+}
+
+.about-what-gino___p {
+  font-family: "PT Sans";
+  font-size: 2.916em;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.about-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.about-gino__text {
+  color: #ffffff;
+  font-family: "PT Sans - Caption Bold";
+  font-size: 4.136em;
+  font-weight: 400;
+  width: 61%;
+  text-align: center;
+}
+
+.about-action {
+  background-color: #df4a5e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+  padding: 0.6% 2.3%;
+}
+
+.about-action__text {
+  font-family: "PT Sans";
+  font-size: 1.83em;
+  color: #ffffff;
+  border-right: 1px solid #ffffff;
+  margin: 0 2.4% 0 0;
+}
+
+.action__a {
+  color: #ffffff;
+}
+
+.action__a:visited {
+  color: #ffffff;
+}
+
+.action-bonus {
+  font-weight: 700;
+}
+
+.action-clock {
+  font-weight: 700;
+}
+
+.main-icon__click {
+  display: none;
+  background: rgba(95, 96, 98, 0.5);
+}
+
+.main-icon__text {
+  color: #333333;
+  font-family: "PT Sans";
+  padding: 5% 2% 3.7% 2%;
+  font-size: 1.33em;
+  font-weight: 400;
+  border: 2px solid rgba(95, 96, 98, 0.5);
+  background-color: #f7f7f7;
+}
+
+.about-action__bonus {
+  color: #ffffff;
+  font-family: "PT Sans - Caption Bold";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 4.16em;
+  font-weight: 400;
+}
+
+.about-action__bonus:after {
+  content: url(assets/img/bold.png);
+}
+
+.main-button__margin {
+  margin: 0 0 4.8% 0;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 3%;
+}
+
+.footer__text {
+  opacity: 0.5;
+  color: #ffffff;
+  font-family: "PT Sans";
+  font-size: 1.16em;
+  font-weight: 400;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 850px) {
+  body {
+    font-size: 8px;
+  }
+  .header-wrapper {
+    width: 90vw;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  body {
+    font-size: 9px;
+  }
+  .header-logo {
+    display: none;
+  }
+  .main-service-p {
+    text-align: center;
+  }
+  .about-what-gino___p {
+    text-align: center;
+  }
+  .about-action {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about-action__bonus {
+    display: none;
+  }
+  .about-action__text {
+    font-family: "PT Sans";
+    font-size: 1.5em;
+    color: #ffffff;
+    border-right: none;
+    text-align: center;
+  }
+  .footer__text {
+    text-align: center;
+  }
+  main {
+    width: 95vw;
+    grid-auto-flow: column;
+    -ms-grid-columns: 50% 46%;
+        grid-template-columns: 50% 46%;
+        grid-template-areas: "par par" "Ic1 Ic2" "line1 line1" "Ic3 Ic4" "line2 line2" "Ic5 Ic6" "line3 line3" "Ic7 Ic8" "line4 line4" "bt bt";
+    padding: 2% 0 0 0;
+  }
+  .click1 {
+    grid-area: click1;
+  }
+  .click2 {
+    grid-area: click2;
+  }
+  .click3 {
+    grid-area: click3;
+  }
+  .click4 {
+    grid-area: click4;
+  }
+  .click5 {
+    grid-area: click5;
+  }
+  .click6 {
+    grid-area: click6;
+  }
+  .click7 {
+    grid-area: click7;
+  }
+  .click8 {
+    grid-area: click8;
+  }
+  .Ic-5 {
+    -ms-grid-row: 6;
+    -ms-grid-column: 1;
+    grid-area: Ic5;
+  }
+  .Ic-6 {
+    -ms-grid-row: 6;
+    -ms-grid-column: 2;
+    grid-area: Ic6;
+  }
+  .Ic-7 {
+    -ms-grid-row: 8;
+    -ms-grid-column: 1;
+    grid-area: Ic7;
+  }
+  .Ic-8 {
+    -ms-grid-row: 8;
+    -ms-grid-column: 2;
+    grid-area: Ic8;
+  }
+  .line1 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: line1;
+  }
+  .line2 {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: line2;
+  }
+  .line3 {
+    -ms-grid-row: 7;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: line3;
+  }
+  .line4 {
+    -ms-grid-row: 9;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: line4;
+  }
+  .main-icon__click {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .about-gino__text {
+    font-size: 2.5em;
+  }
+  .account-price {
+    font-size: 4.667em;
+    margin-top: 13%;
+  }
+  .header-special-p {
+    right: 30%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  body {
+    font-size: 7px;
+  }
+  main {
+    grid-gap: 5px;
+  }
+  .account-price {
+    font-size: 2.667em;
+  }
+  .about-gino__text {
+    font-size: 2.136em;
+  }
+  .header-special-p {
+    right: 30%;
+  }
+  .img-logo {
+    height: 13px;
+    margin-right: 7px;
+  }
+  .header-logo {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .about-gino__text {
+    font-size: 2.136em;
+  }
+}
