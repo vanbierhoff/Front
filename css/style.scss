@@ -1,0 +1,143 @@
+@import 'fonts';
+body{
+   
+    display: flex;
+    flex-direction: column;
+    font-family: 'lucidaGrande';
+    font-size: 12px;
+}
+
+main{
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+button{
+    border:none;
+    border-radius: 5px;
+    outline: 0!important;
+    font-size: 1.33em;
+    padding: 1.33em 5.125em 1.01em 1.83em;
+    margin: 6.16em 0 0 0;
+    color: #ffffff;
+}
+
+.video-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video-wrapper{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.main-canvas-screen-history{
+    position: absolute;
+}
+
+.main-section-history__h2{
+    font-size: 2.33em;
+    color:#283F5C;
+}
+
+.main-green-contour{
+    position: absolute;
+}
+
+.main-section-screen{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-self: flex-start;
+}
+
+
+.main-wrapper-image{
+    flex-wrap: wrap;
+}
+
+.main-button__grayColor{
+    background-color: #BDBDBD;
+    
+}
+.main-button__redColor{
+    background-color: #C85B5B;
+  
+}
+
+.main-button__whiteColor{
+    background: #ffffff;
+    color: #4B9C7B;
+}
+
+.main-button__open-camera{
+background-color: #4B9C7B;
+margin-right: 4.875em;
+
+}
+
+.main-screen{
+    margin:1em 2em 1em 0;
+    border: 1px solid #979797;
+    width: 320px;
+    height: 180px;
+}
+
+.button__boxShadow{
+    box-shadow: 5px 5px 30px rgba($color: #000000, $alpha: 0.25);
+   
+}
+
+
+.button-wrapper__df{
+    display: flex;
+}
+
+@media screen and (max-width:650px){
+    body{
+        font-size: 10px;
+    }
+    .main-video{
+        width: 80%;
+    }
+
+    .main-svg{
+        width: 80%;
+    }
+    .button-wrapper__df{
+        flex-direction: column;
+        align-items: stretch;
+    }
+    button{
+        margin: 15px 0 0 0;
+    }
+
+    .main-button__open-camera {
+        margin-right: 0;    
+        
+    }
+    .main-screen{
+        margin:1em 0 1em 0;
+        height: auto;
+        align-items:center;
+        
+    }
+
+    .main-section-screen{
+        margin: 0 auto;
+    }
+
+    .main-wrapper-image {
+        display: flex;
+        justify-content: center;
+    }
+   
+
+    
+
+
+}
