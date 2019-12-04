@@ -1,0 +1,155 @@
+body{
+    width: 100%;
+    font-size: 12px;
+    margin: 0 auto;
+   
+}
+
+.display-none{
+    display: none;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+form{
+    margin: 3em 0 0 0;
+    font-size: 1.5em;
+ width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.form-input{
+    margin-right:1.2em;
+    outline: 0!important;
+    border: 1px solid red;
+}
+
+
+.input-wrapper__mr{
+margin-right: 25px;
+
+}
+
+
+
+.form-square{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.wrapper-p__square{
+    width: 84%;
+    display: flex;
+    position: relative;
+}
+
+.img-sort-down{
+    position: absolute;
+    right: 30%;
+    top:30%
+}
+
+.form-p__square{
+    display: flex;
+}
+
+
+
+.form-contractor{
+    display: flex;
+    flex-direction: column;
+   box-sizing: border-box;
+    margin: 0 0 1em 0;
+    width: 100%;
+    align-items: center;
+}
+
+
+.input-wrapper{
+    display: flex;
+    margin-bottom: 0.5em;
+    align-items: center;
+    
+}
+
+
+
+#type-of-property > option {
+    font-size: 1em;
+    margin: 0;
+  
+}
+
+.property-description{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.property__p{
+    margin: 1em 1em 2em 0;
+}
+
+.green-border{
+    border:1px solid green;
+}
+
+table{
+    width: 100%;
+}
+
+.table-header__bk{
+    background-color: gray;
+   
+}
+.table-th{
+    width: 33%;
+    
+text-align: left;
+
+
+    
+}
+
+.table-tr > td > p{
+display: flex;
+margin: 0;
+justify-content: flex-start;
+position: relative;
+
+}
+
+.table-td-span__square{
+   position: absolute;
+   right: 10px;
+}
+
+
+@media screen and (max-width:500px){
+table{
+    font-size: 12px;
+}
+
+form{
+
+    width: 90%;
+
+}
+
+.form-input{
+    width: 45%;
+}
+
+
+
+}
