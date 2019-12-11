@@ -91,7 +91,7 @@ getName() {
 
       }
     }  
-    console.log(this.object)
+    
     
       return  [this.object]
 

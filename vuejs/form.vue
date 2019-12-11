@@ -264,7 +264,7 @@ this.testInput()
 
       .then(response => {
         if (response.status !== 200) {
-          console.log(data);
+         
           return Promise.reject();
 
         }
@@ -296,7 +296,7 @@ this.testInput()
    },
 
    parserLoad(data){
-    console.log(data)
+
     for (let key in data){
        for (let objEl in data[key]){
           if(  this.dataObj[objEl] === undefined){
