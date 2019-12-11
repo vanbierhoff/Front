@@ -5,7 +5,7 @@
 const path = require('path');
 const MiniCssPlugin = require('mini-css-extract-plugin');
 const HTMLplugin = require('html-webpack-plugin');
-
+const VueLoaderPlugin = require('vue-loader/lib/plugin')
 
 /**
  * @param  path.resolver(__dirname) - узнает в какой конкретно папке и ОС мы находимся. Дальше можно указывать относительый путь к точке входа
@@ -25,12 +25,12 @@ const HTMLplugin = require('html-webpack-plugin');
 module.exports = {
 
     entry: {
-        main: path.resolve(__dirname, 'js', "index.js")
+        main: path.resolve(__dirname, 'vueJs', "main.js")
     },
 
     output: {
         path: path.resolve(__dirname, "dist"),
-        filename: "bundle.js",
+        filename: "bundleVue.js",
 
     },
 
@@ -63,10 +63,15 @@ module.exports = {
              options:{
                  name:'[path][name].[ext]',
                  outputPath:'./assets',
-             }
+             },
+             
                 
               
             },
+            {
+                test: /\.vue$/,
+                loader: 'vue-loader'
+              },
         ]
     },
     plugins: [
@@ -78,6 +83,7 @@ module.exports = {
             template: path.resolve(__dirname, "index.html"),
             filename: "index.html"
         }),
+        new VueLoaderPlugin()
     ]
 
 
