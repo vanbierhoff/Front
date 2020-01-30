@@ -1,0 +1,154 @@
+@font-face {
+  font-family: CourNew;
+  src: url("../fonts/cour.ttf");
+  font-weight: 400;
+}
+
+.slider {
+  width: 80%;
+  position: relative;
+}
+
+.slider-headLine {
+  width: 100%;
+}
+
+.slider-wrapper-first__position {
+  margin-left: 8px;
+}
+
+.slider-wrapper-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  top: 47%;
+}
+
+.slider-wrapper-two__positon {
+  left: 25%;
+}
+
+.slider-wrapper-three__position {
+  left: 50%;
+}
+
+.slider-wrapper-last__positon {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  right: 0;
+}
+
+.img-last-level {
+  margin-right: -10px;
+}
+
+.img-level__ml {
+  margin-left: -8px;
+}
+
+.silder-manipulator {
+  margin-left: 50px;
+}
+
+body {
+  background: url("../img/background/gray.png");
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.vue-container {
+  background: url("../img/background/papirus.jpg");
+  max-width: 1000px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.info-interactive__checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.checkbox__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.my-anket-table {
+  width: 100%;
+  max-width: 1000px;
+}
+
+.my-anket-table__name {
+  width: 13%;
+}
+
+.myInfo-table__td {
+  position: relative;
+  font-family: courNew;
+}
+
+.myInfo-table__line {
+  top: 100%;
+  display: block;
+  position: absolute;
+  width: 53%;
+  height: 2px;
+  background: url(../img/line.png) 100% 49%;
+  height: 2px;
+}
+
+.text-typing {
+  width: 100%;
+  color: green;
+  font-size: 22px;
+  font-family: 'Marck Script', cursive;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-animation: type 5s steps(100, end);
+  animation: type 5s steps(100, end);
+}
+
+@keyframes type {
+  from {
+    width: 0;
+  }
+}
+
+@-webkit-keyframes type {
+  from {
+    width: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,77 @@
+@import 'fonts.scss';
+@import '_mixins.scss';
+@import '_slider';
+
+body{   
+    background: url('../img/background/gray.png');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}  
+
+.vue-container {
+    background: url('../img/background/papirus.jpg');
+    max-width: 1000px;
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.info-interactive__checkbox{
+    display: flex; 
+}
+
+.checkbox__flex{
+    display: flex;
+    flex-direction: column;
+}
+
+.my-anket-table{
+    width: 100%;
+    max-width: 1000px;
+}   
+
+.my-anket-table__name{
+    width: 13%;
+} 
+
+.myInfo-table__td{
+    position: relative;
+    font-family: courNew;  
+}
+.myInfo-table__line{  
+    top:100%;
+    display: block;
+    position: absolute;
+    @include line;
+    height: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+.text-typing
+{
+    width: 100%;
+    color:green;
+    font-size: 22px;
+    font-family: 'Marck Script', cursive;
+    white-space:nowrap;
+    overflow:hidden;
+    -webkit-animation: type 5s steps(100, end);
+    animation: type 5s steps(100, end);
+} 
+@keyframes type{ 
+    from { width: 0; }
+}
+ 
+@-webkit-keyframes type{
+    from { width: 0; }  
+}
