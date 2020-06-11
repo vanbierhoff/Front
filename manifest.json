@@ -1,0 +1,1 @@
+{  "name": "sNumber",  "start_url":"/",  "icons": [{  "src": "assets/img/manifest192.png",  "sizes": "192x192",  "type": "image/png"},    {      "src": "assets/img/manifest512.png",      "sizes": "512x512",      "type": "image/png"    }      ],  "display": "standalone"}
