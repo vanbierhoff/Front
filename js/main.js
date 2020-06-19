@@ -1,0 +1,1 @@
+import 'promise-polyfill/src/polyfill';import regeneratorRuntime from 'regenerator-runtime'import product from './productCard.vue'import 'whatwg-fetch'import Vue from 'vue'new Vue({    el: '#wrapper-vue',    render: function (createElement) {        return createElement(product);    }});
