@@ -1,0 +1,1 @@
+import regeneratorRuntime from 'regenerator-runtime'import swipe from './swipe.js'import switchPage from './switchPage.js'import css from '../css/style.css'
